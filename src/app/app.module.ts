@@ -6,9 +6,14 @@ import { HomeComponent } from './componentes/home/home.component';
 import { NabvarComponent } from './shared/nabvar/nabvar.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { HeroesComponent } from './componentes/heroes/heroes.component';
+import { HeroeComponent } from './componentes/heroe/heroe.component';
 
 //RUTAS
 import {APP_ROUTING} from "./app.routes";
+
+//SERVICIOS
+import {HeroesService} from "./servicios/heroes.service";
+
 
 
 @NgModule({
@@ -17,13 +22,16 @@ import {APP_ROUTING} from "./app.routes";
     HomeComponent,
     NabvarComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroeComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
