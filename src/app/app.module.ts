@@ -13,6 +13,7 @@ import {APP_ROUTING} from "./app.routes";
 
 //SERVICIOS
 import {HeroesService} from "./servicios/heroes.service";
+import { HerobuscadoComponent } from './componentes/herobuscado/herobuscado.component';
 
 
 
@@ -23,7 +24,8 @@ import {HeroesService} from "./servicios/heroes.service";
     NabvarComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    HerobuscadoComponent
   ],
   imports: [
     BrowserModule,
